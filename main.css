@@ -1,6 +1,18 @@
+
 body {
-	background: #0e141a;
+	color: #4C4C4E;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 300;
 }
 
 .container {
@@ -11,17 +23,8 @@ body {
 	text-align: center;
 }
 
-h1 {
-	font-size: 72px;
-	font-weight: 700;
-	color: #00d46a;
-	margin: 0;
-}
-
-h2 {
-	font-weight: 300;
-	color: rgba(255, 255, 255, 0.9);
-	margin: 0;
+.gray {
+	color: #979797;
 }
 
 .logo {
@@ -29,4 +32,8 @@ h2 {
 	bottom: 20px;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.orange {
+	color: #F6A623;
 }
