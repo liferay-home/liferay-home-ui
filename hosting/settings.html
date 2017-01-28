@@ -10,17 +10,19 @@
 <body>
 <div class="container">
 	<h1>Settings</h1>
+		<input name="name" placeholder="Device Name">
+		<input name="location" placeholder="Device Location">
 
-	<form action="http://app.liferay-home.wedeploy.io/devices" method="post">
-		<input id="user" name="user" type="hidden" value="http://app.liferay-home.wedeploy.io/users/1">
-		<input name="type" type="hidden" value="HOME">
-		<input name="name" placeholder="Name" />
-		<input name="serialNumber" placeholder="Serial Number">
+	<!--<form action="http://app.liferay-home.wedeploy.io/devices" method="post">-->
+		<!--<input id="user" name="user" type="hidden" value="http://app.liferay-home.wedeploy.io/users/1">-->
+		<!--<input name="type" type="hidden" value="HOME">-->
+		<!--<input name="name" placeholder="Name" />-->
+		<!--<input name="serialNumber" placeholder="Serial Number">-->
 
-		<input type="submit" label="Connect Pi" />
-	</form>
+		<!--<input type="submit" label="Connect Pi" />-->
+	<!--</form>-->
 
-	<!--<button><a href="javascript:;" onclick="connectPi();">Connect Pi</a></button>-->
+	<button><a href="javascript:;" onclick="connectPi();">Connect Pi</a></button>
 	<button><a href="javascript:;" onclick="alert('Please hit this url on your phone: http://app.liferay-home.wedeploy.com');">Connect Phone</a></button>
 
 	<div class="temperature-format">
@@ -43,11 +45,11 @@
 //	var userIdInput = document.getElementById('userId');
 //	userIdInput.setAttribute('value', email);
 //
-//	connectPi = function () {
-//		var serialNumber = prompt('Please enter your device serial number');
-//
-//		console.log(email, serialNumber);
-//	}
+	connectPi = function () {
+		var serialNumber = prompt('Please enter your device serial number');
+
+		console.log(email, serialNumber);
+	}
 </script>
 
 </body>
