@@ -1,0 +1,9 @@
+{
+  "id": "auth",
+  "type": "wedeploy/auth",
+  "env": {
+	"WEDEPLOY_AUTH_GOOGLE": "true",
+	"WEDEPLOY_AUTH_GOOGLE_CLIENT_ID": "227896682125-ted6fn1emrioabh474a83q5d8ebor1gc.apps.googleusercontent.com",
+	"WEDEPLOY_AUTH_GOOGLE_CLIENT_SECRET": "GNqDQc4pTBYPOnvReLZRF9U2"
+  }
+}
