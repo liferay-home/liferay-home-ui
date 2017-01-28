@@ -15,7 +15,14 @@
 
 	<input placeholder="Pi Location" />
 
-	<button><a href="javascript:;" onclick="prompt('Please enter your device serial number');">Connect Pi</a></button>
+	<form action="http://app.liferay-home.wedeploy.io/devices" method="post">
+		<input id="userId" name="id" type="hidden">
+		<input name="serialNumber" placeholder="Serial Number">
+
+		<input type="submit" label="Connect Pi" />
+	</form>
+
+	<!--<button><a href="javascript:;" onclick="connectPi();">Connect Pi</a></button>-->
 	<button><a href="javascript:;" onclick="alert('Please hit this url on your phone: http://app.liferay-home.wedeploy.com');">Connect Phone</a></button>
 
 	<div class="temperature-format">
@@ -32,9 +39,17 @@
 <script src="http://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
 <script>
 	var auth = WeDeploy.auth('auth.liferay-home-dashboard.wedeploy.io');
-	var email = auth.currentUser.email;
 
-	console.log(auth, email);
+	email = auth.currentUser.email;
+
+	var userIdInput = document.getElementById('userId');
+	userIdInput.setAttribute('value', email);
+
+	connectPi = function () {
+		var serialNumber = prompt('Please enter your device serial number');
+
+		console.log(email, serialNumber);
+	}
 </script>
 
 </body>
