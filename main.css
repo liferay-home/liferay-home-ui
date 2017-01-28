@@ -9,7 +9,7 @@ body {
 	font-size: 18px;
 }
 
-button {
+button, input[type="submit"] {
 	background: none;
 	border: 2px solid #979797;
 	border-radius: 5px;
@@ -39,8 +39,6 @@ h2 {
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-
-
 
 input {
 	border: 2px solid gray;
@@ -113,5 +111,4 @@ input:focus {
 
 .temperature-format a.selected {
 	color: #4C4C4E;
-	display: block;
 }
