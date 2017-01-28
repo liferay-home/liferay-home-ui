@@ -41,8 +41,9 @@
 <script src="http://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
 <script>
 	var auth = WeDeploy.auth('auth.liferay-home-dashboard.wedeploy.io');
+	var email = auth.currentUser.email;
 
-	console.log(auth);
+	console.log(auth, email);
 </script>
 </body>
 </html>
