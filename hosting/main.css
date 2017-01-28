@@ -40,7 +40,7 @@ h2 {
 	text-align: center;
 }
 
-input {
+input, input:not([type="submit"]) {
 	border: 2px solid gray;
 	border-width: 0 0 1px 0;
 	display: block;
