@@ -11,12 +11,10 @@
 <div class="container">
 	<h1>Settings</h1>
 
-	<input placeholder="Pi Name" />
-
-	<input placeholder="Pi Location" />
-
 	<form action="http://app.liferay-home.wedeploy.io/devices" method="post">
-		<input id="userId" name="id" type="hidden">
+		<input id="user" name="user" type="hidden" value="http://app.liferay-home.wedeploy.io/users/1">
+		<input name="type" type="hidden" value="HOME">
+		<input name="name" placeholder="Name" />
 		<input name="serialNumber" placeholder="Serial Number">
 
 		<input type="submit" label="Connect Pi" />
@@ -42,14 +40,14 @@
 
 	email = auth.currentUser.email;
 
-	var userIdInput = document.getElementById('userId');
-	userIdInput.setAttribute('value', email);
-
-	connectPi = function () {
-		var serialNumber = prompt('Please enter your device serial number');
-
-		console.log(email, serialNumber);
-	}
+//	var userIdInput = document.getElementById('userId');
+//	userIdInput.setAttribute('value', email);
+//
+//	connectPi = function () {
+//		var serialNumber = prompt('Please enter your device serial number');
+//
+//		console.log(email, serialNumber);
+//	}
 </script>
 
 </body>
